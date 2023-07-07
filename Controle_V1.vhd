@@ -49,7 +49,7 @@ ARCHITECTURE Controle_arch OF Controle IS
 	Jogada_habilitada <= Jogada_confirmada_aux;
 	
 	TABULEIRO1 : TABULEIRO
-	PORT MAP(Player_1_IN, Player_2_IN, Tabuleiro_aux, EMPATE);
+	PORT MAP(Player_1_IN, Player_2_IN, Tabuleiro_aux);
 	
 
 	MOVEMENT: PROCESS (CLK_IN, Botao_Direita_aux, Contador, EN, Jogador_aux, RESET)
